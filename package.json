@@ -1,0 +1,32 @@
+{
+  "name": "memory",
+  "version": "0.0.1",
+  "description": "memory game",
+  "main": "app.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build:live",
+    "build:live": "nodemon -e js,ts -w ../ --exec ts-node -- ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bellmountain/memory.git"
+  },
+  "author": "DK",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bellmountain/memory/issues"
+  },
+  "homepage": "https://github.com/bellmountain/memory#readme",
+  "devDependencies": {
+    "@types/express": "^4.0.34",
+    "@types/node": "^6.0.48",
+    "express": "^4.14.0",
+    "body-parser": "~1.15.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "morgan": "~1.7.0",
+    "pug": "~2.0.0-beta6",
+    "serve-favicon": "~2.3.0"
+  }
+}
